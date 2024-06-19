@@ -27,7 +27,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12" data-aos="fade-right" >
-                        <div class="hero__title">
+                        <div class="hero__title" style="margin-top: -70px;">
                             <h3><?=__('form.title_1')?></h3>
                             <h1><?=__('form.title_2')?> <span><?=__('form.title_3')?></span> </h1>
                         </div>
@@ -97,10 +97,15 @@
                     </div>
                 </div>
             </div>
+
+            <div class="d-block d-sm-none">
+                <i><img class="mb-4" src="<?=$_ENV['WEB_URL']?>assets/img/8-responsive.jpg" alt=""></i>
+                <i><img src="<?=$_ENV['WEB_URL']?>assets/img/4-responsive.jpg" alt=""></i>
+            </div>
         </section>
         <!---------future Section End ---------->
         <!---------asombro Section START ---------->
-        <section class="asombro-area overflow-hidden" style="background-image: url(<?=$_ENV['WEB_URL']?>assets/img/3.jpg);">
+        <section class="asombro-area overflow-hidden d-none d-md-block d-lg-block d-xl-block" style="background-image: url(<?=$_ENV['WEB_URL']?>assets/img/3.jpg);">
           <div class="opacity no-padding">
             <div class="container">
                 <div class="row">
@@ -121,7 +126,7 @@
         <!---------asombro Section End ---------->
         <!---------gallery Section START ---------->
         <section class="gallery-area overflow-hidden">
-            <div class="gallery__btn d-md-none">
+            <div class="gallery__btn d-none">
                 <a href="#" class="thm_btn"><?=__('gallery.button_1')?> <img src="<?=$_ENV['WEB_URL']?>assets/img/right-arrow.svg" alt=""></a>
             </div>
             <div class="container d-none d-md-block">
@@ -166,7 +171,7 @@
         </section>
         <!---------gallery Section End ---------->
         <!---------Explora Section START ---------->
-        <section class="Explora-area overflow-hidden a">
+        <section class="Explora-area overflow-hidden d-none d-md-block d-lg-block d-xl-block">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 d-flex justify-content-center align-items-center">
@@ -193,13 +198,13 @@
             </div>
         </section>
 
-        <section class="Explora-area overflow-hidden b" style="background-image: url(<?=$_ENV['WEB_URL']?>assets/img/3-responsive.jpg);">
+        <section class="Explora-area overflow-hidden d-block d-sm-none" style="background-image: url(<?=$_ENV['WEB_URL']?>assets/img/3-responsive.jpg); margin-top: -50px;">
             <div class="container opacity">
                 <div class="row">
                     
                     <div class="col-lg-6" data-aos="fade-right" >
-                        <div class="Explora__content">
-                            <h1><?=__('explore.title_1')?></h1>
+                        <div class="Explora__content px-3">
+                            <h1 class="text-center my-5"><?=__('explore.title_1')?></h1>
 
                             <p><?=__('explore.text_1')?></p>
                             <p><?=__('explore.text_2')?></p>
@@ -217,13 +222,16 @@
         <!---------formas Section START ---------->
         <section id="como_llegar" class="formas-area overflow-hidden">
             <div class="container">
+                <div class="gallery__btn mb-5 d-block d-sm-none">
+                    <a href="#" class="thm_btn"><?=__('gallery.button_1')?> <img src="<?=$_ENV['WEB_URL']?>assets/img/right-arrow.svg" alt=""></a>
+                </div>
                 <div class="text-center formas__area__top" data-aos="fade-up" >
                     <div class="sec__title">
                         <h1><?=__('location.title_1')?></h1>
                     </div>
                     <div class="formas__map" data-aos="zoom-in" >
                         <div style="width: 100%">
-                            <iframe width="100%" height="570" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.6397222438122!2d2.1743558!3d41.4036299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2dcd83dfb93%3A0x9bd8aac21bc3c950!2sBas%C3%ADlica%20de%20la%20Sagrada%20Fam%C3%ADlia!5e0!3m2!1ses!2sve!4v1708609288993!5m2!1ses!2sve"><a href="https://www.maps.ie/population/"></a></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3109.9583459200653!2d-9.3931838235158!3d38.78758925317504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1edabff29c5a67%3A0x77271a7dcb673b58!2sPalacio%20de%20la%20Pena!5e0!3m2!1ses!2sve!4v1718542130809!5m2!1ses!2sve" width="100%" height="570" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                         </div>
                     </div>
                 </div>
@@ -384,7 +392,7 @@
         <!---------footer Section START ---------->
         <?php require 'footer.php' ?>
         <!---------footer Section End ---------->
-		<!-- JS here --> 
+        <!-- JS here --> 
         <?php require 'calendar.php' ?>
         <?php require 'scripts.php' ?>
     </body>

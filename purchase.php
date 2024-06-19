@@ -21,7 +21,7 @@
             </div>
         </section>
 
-        <section class="hero-area d-block d-sm-none" style="background-image: url(./assets/img/1_purchase_responsive.jpg);">
+        <section class="hero-area d-block d-sm-none no" style="background-image: url(./assets/img/1_purchase_responsive.jpg); padding-top: 30px;">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">

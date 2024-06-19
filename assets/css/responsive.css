@@ -645,6 +645,15 @@ footer.footer-area.f__home {
         padding-top: 127px;
     }
 
+    .hero-area-responsive {
+        padding: 50px 0;
+    }
+
+    .hero-area-responsive:before {
+        background: #2E2D2D 29.04%;
+        opacity: .6;
+    }
+
     .hero__form p {
         font-size: 11px;
         padding: 10px;

@@ -13,7 +13,7 @@ font-family: 'Roboto', sans-serif;
   --bgColor: #2E2D2D;
   --textColor: #303030;
   --textColor: #444141;
-  --mainColor: #F7AF32;
+  --mainColor: #6D9BC6;
 
 
   --f18 : 18px;
@@ -719,8 +719,8 @@ font-weight: 100;
 }
 
 .Explora__content p {
-    margin-bottom: 24px;
-font-weight: normal;
+    margin-bottom: 1rem;
+    font-weight: normal;
 }
 
 .Explora__content h1 {
